@@ -20,7 +20,7 @@ export function Post() {
 
             <p>Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀</p>
 
-            <p>👉{' '}<a href="">jane.design/doctorcare</a></p>
+            <p>👉{' '}<a href="">KevenWill157</a></p>
             <p>
                 <a href="">  #novoprojeto </a>{' '}
                 <a href=""> #nlw </a>{' '}

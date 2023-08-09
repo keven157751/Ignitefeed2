@@ -5,7 +5,7 @@ import ignitelogo from  '../assets/ignite-logo.svg';
 export function Header () {
     return (
     <header className={styles.header}> 
-        <img src={ignitelogo} alt="logotipo do ignite" />
+        <img src={ignitelogo} alt="logotipo do ignites" />
      </header>
   );
 }

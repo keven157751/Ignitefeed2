@@ -21,6 +21,7 @@
 .content a {
     font-weight: bold;
     color: var(--green-500);
+    text-decoration: none;
 }
 
 .content a:hover {
@@ -107,4 +108,8 @@
 
 .commentForm button[type=submit]:hover {
     background: var(--green-300);
+}
+
+.commentList {
+    margin-top: 2rem;
 }

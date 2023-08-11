@@ -37,3 +37,19 @@
     line-height: 1.6;
     color: var(--gray-400);
 }
+
+.header button {
+    background: transparent;
+    color: var(--gray-400);
+    border: 0;
+    
+}
+
+.header button:focus {
+    border-radius: 3px;
+}
+
+.commentBox button {
+    background: transparent;
+    border: 0;
+}

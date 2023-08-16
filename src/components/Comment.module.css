@@ -20,9 +20,16 @@
     padding: 1rem;
 }
 
+.authorAndTime  strong {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+
 .header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -46,10 +53,48 @@
 }
 
 .header button:focus {
-    border-radius: 3px;
+    border-radius: 2px; 
+}
+
+.header button:hover {
+    color: var(--red-500);
 }
 
 .commentBox button {
     background: transparent;
     border: 0;
+    line-height: 0;
+}
+
+.commentContent p {
+    margin-top: 1rem;
+    color: var(--gray-300);
+}
+
+.commentBox footer {
+    margin-top: 1rem;
+}
+
+.commentBox footer button {
+    background: transparent;
+    border: 0;
+    color: var(--gray-400);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.commentBox footer button:hover {
+    color: var(--green-300);
+}
+
+.commentBox footer button svg {
+    margin-right: 0.5rem;
+}
+
+.commentBox footer button span::before {
+    content: "\2022";
+    padding: 0 0.25rem;
 }

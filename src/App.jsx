@@ -27,7 +27,7 @@ const posts = [
 
   id: 2,
   author: {
-      avatarUrl: 'https://github.com/keven157751.png',
+      avatarUrl: 'https://github.com/maykbrito.png',
       name: 'Mayk Brito',
       role: 'Educador @ Rocketseat',
   },
@@ -42,6 +42,8 @@ const posts = [
 ];
 
 
+// iteração percorrer o array
+
 export function App() {
   return (
     <div>
@@ -50,9 +52,13 @@ export function App() {
     <div className={styles.wrapper}>
     <Sidebar />
     <main>
-      {post.map(post => {
-        return <Post />;
-      })}
+       {posts.map(post => {
+        return (<Post 
+          author={post.author}
+          content={post.content}
+          publishedAt={post.publishedAt}
+        />);
+      })} 
     </main>
     
      </div>

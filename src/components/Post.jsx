@@ -35,7 +35,7 @@ export function Post({author, publishedAt, content}) {
             setNewCommentText(event.target.value);
         }
 
-        function deleteComment(comment) {
+        function deleteComment(comment, styles) {
             console.log(`Deletar comentario ${comment}`);
 
         }
@@ -55,7 +55,7 @@ export function Post({author, publishedAt, content}) {
                 {publishedDateRelativeToNow}
             </time>
             </header>
-
+            
             <div className={styles.content}>
                 {content.map(line => {
                     if (line.type === 'paragraph') {

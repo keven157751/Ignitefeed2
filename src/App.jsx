@@ -49,7 +49,7 @@ export function App() {
     <div>
     <Header />
 
-    <div className={styles.wrapper}>
+    <div className={swer}>
     <Sidebar />
     <main>
        {posts.map(post => {

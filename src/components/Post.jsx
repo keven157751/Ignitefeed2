@@ -1,7 +1,6 @@
 import { format, formatDistanceToNow } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
 
-
 import { Comment } from './Comment';
 import { Avatar } from './Avatar';
 
@@ -31,26 +30,30 @@ export function Post({author, publishedAt, content}) {
             setNewCommentText('');
         }
 
-        function handleNewCommentChange() {
+        function handleCreateNewComment(textarea){} 
+
+        function handleNewCommentChange() { 
             setNewCommentText(event.target.value);
         }
 
-        function deleteComment(comment, styles) {
-            console.log(`Deletar comentario ${comment}`);
+        function deleteComment(commentToDelete){
+            const commentsWithoutDeletedOne = comments.filter(comment => {
+                return comment != commentToDelete;
+            })
 
+            setComments(commentsWithoutDeletedOne);
         }
 
     return (
         <article className={styles.post}>
             <header>
-                <div className={styles.author}>
+                <div className={styles.author}> 
                     <Avatar src={author.avatarUrl} />
                     <div className={styles.authorInfo}>
                         <strong>{author.name}</strong>
                         <span>{author.role}</span>
-                    </div>
+                   </div>
                 </div>
-
             <time title={publishedDateFormatted} dateTime={publishedAt.toISOString()}>
                 {publishedDateRelativeToNow}
             </time>
@@ -90,7 +93,6 @@ export function Post({author, publishedAt, content}) {
                     /> 
                 })}
             </div>
-
         </article>
     )
 }
